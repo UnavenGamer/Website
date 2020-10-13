@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico" type="imgage/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Unaven's Blog</title>
+    <h1 class="title">Unaven's Blog</h1>
+  </head>
+  <body>
+    <nav class="body">
+      <h2>
+        Unaven's Updates
+      </h2>
+      <a href="index.html">
+        Home
+      </a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="about.html">
+        About Me
+      </a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="soon.html">
+        Contact Me
+      </a>
+    </nav>
+    <main>
+      <div class= "border" style = "float:left; padding: 5px; width:70%;" >
+        <article class="font">
+          <h4>Welcome to My Blog</h4>
+          <time class= time>October 7, 2020</time>
+          <p>Welcome to my blog. I'm quite new to this so don't expect much
+          yet when it comes to quality of the blog or the content. Especially
+          since I'll be coding this from scrath as a project for HTML, CSS and
+          most probably JavaScript as well. This is all new to me so I hope to
+          improve as quickly as possible and that you enjoy the journey.</p>
+            <a href="Welcome_to_my_blog.html">Read More</a>
+        </article>
+        <hr/ >
+        <article class="font">
+          <h4>Recipes</h4>
+          <time class= time>October 6, 2020</time>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+            <a href="blog/Welcome_to_my_blog.html">Read More</a>
+        </article>
+        <hr/ >
+        <article class="font">
+          <h4>Streaming</h4>
+          <time class= time>October 6, 2020</time>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+            <a href="blog/Welcome_to_my_blog.html">Read More</a>
+        </article>
+        <hr/ >
+        <article class="font">
+          <h4>Social Media</h4>
+          <time class= time>October 6, 2020</time>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+            <a href="blog/Welcome_to_my_blog.html">Read More</a>
+        </article>
+        <hr/ >
+        <article class="font">
+          <h4>Photography</h4>
+          <time class= time>October 6, 2020</time>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+            <a href="blog/Welcome_to_my_blog.html">Read More</a>
+        </article>
+        <hr/ >
+      </div>
+      <div class="border" style = "float:left; width:28%;">
+        Subscribe Form:<br />
+        <form class="font" action="" method="GET">
+          <div style="margin: 10px;">
+            <label for="firstname">First Name:</label> <br />
+              <input type="text"
+                     name="firstname"
+                     id="firstname"
+                     placeholder="First Name"
+                     required="required"
+              />
+          </div>
+          <div style="margin: 10px;">
+            <label for="email">Email Adress:</label> <br />
+              <input type="email"
+                     name="email"
+                     id="email"
+                     placeholder="you@gmail.com"
+                     required="required"
+                     />
+          </div>
+          <button
+            type="submit"
+            name="submit"
+            value="Subscribe!"
+            style="margin:10px"
+          >Subscribe!
+          </button>
+
+        </form>
+      </div> <br />
+    </main> <br />
+
+
+<canvas id="clock"
+
+  width="400"
+  height="400"
+  style="width: 28%; border: 2px black solid; background-color:#f1f1f1;">
+</canvas>
+
+<script>
+  var canvas = document.getElementById("clock");
+  var ctx = canvas.getContext("2d");
+  var radius = canvas.height / 2;
+  ctx.translate(radius, radius);
+  radius = radius * 0.90;
+  drawClock();
+
+  function drawClock() {
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+    ctx.fillStyle = "white";
+    ctx.fill();
+  }
+
+
+
+  function drawFace(ctx, radius) {
+    var grad;
+
+    ctx.beginPath();
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+    ctx.fillStyle = "white"
+    ctx.fill();
+
+    grad = ctx.radialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05 );
+    grad.addColorStop(0, '#333');
+    grad.addColorStop(0.5, '#fff');
+    grad.addColorStop(1, '#333');
+    ctx.strokeStyle = grad;
+    ctx.lineWidth = radius * 0.1;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(0, 0, radius *0.1, 2 * Math.PI);
+    ctx.fillStyle = "#333";
+    ctx.fill();
+  }
+</script>
+
+  </body> <br />
+
+  <footer class="body">
+    <p>
+      <a href="soon.html">YouTube</a>
+      <a href="https://twitch.tv/unavengamer">Twitch</a>
+      <a href="soon.html">Twitter</a>
+    </p>
+    <p>
+      &copy; 2020 Unaven Ltd
+    </p>
+  </footer>
+</html>

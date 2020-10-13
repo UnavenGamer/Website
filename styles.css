@@ -1,0 +1,53 @@
+.body {
+  font: 15px Arial;
+  font-weight: bold ;
+}
+
+.border {
+  border: 2px black solid;
+  font: 20px Arial;
+}
+
+.center {
+  font: 20px Arial, serif;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  font: 50px Arial, serif;
+  font-weight: bold;
+}
+
+
+.nav {
+  font: 15px Arial;
+  font-weight: bold ;
+}
+
+.font {
+  font: 20px Arial, serif;
+}
+
+.time {
+  font: 15px Arial, serif;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
