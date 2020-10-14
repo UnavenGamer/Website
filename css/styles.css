@@ -1,0 +1,50 @@
+.body {
+  font: 15px Arial;
+  font-weight: bold ;
+}
+
+.border {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px
+  font: 20px Arial;
+}
+
+.border-right {
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 2px;
+  border-right: solid;
+  border-right-color: black;
+  border-right-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+} 
+
+.center {
+  font: 25px Arial, serif;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  font: 50px Arial, serif;
+  font-weight: bold;
+}
+
+
+.nav {
+  font: 15px Arial;
+  font-weight: bold ;
+}
+
+.font {
+  font: 20px Arial, serif;
+}
+
+.time {
+  font: 15px Arial, serif;
+}
+
