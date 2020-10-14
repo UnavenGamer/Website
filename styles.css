@@ -10,17 +10,6 @@
   font: 20px Arial;
 }
 
-.center {
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-  margin: auto;
-  width: 32%;
-  padding: 2px;
-  text-align: center;
-  background-color: #d6d6d6;
-}
-
 .border-right {
   border-top-style: solid;
   border-top-color: black;
