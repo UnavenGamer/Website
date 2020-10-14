@@ -4,9 +4,23 @@
 }
 
 .border {
-  border: "2px black solid;"
+  border-style: solid;
+  border-color: black;
+  border-width: 2px
   font: 20px Arial;
 }
+
+.border-right {
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 2px;
+  border-right: solid;
+  border-right-color: black;
+  border-right-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+} 
 
 .center {
   font: 20px Arial, serif;
